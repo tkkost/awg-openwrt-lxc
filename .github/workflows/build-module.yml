@@ -16,7 +16,7 @@ jobs:
             pkgarch: x86_64
             target: x86
             subtarget: 64
-            vermagic: "a21259e4f338051d27a6443a3a7f7f1f"
+            vermagic: "6.8.0-53-generic SMP preempt mod_unload modversions"
 
     steps:
       - uses: actions/checkout@v4
