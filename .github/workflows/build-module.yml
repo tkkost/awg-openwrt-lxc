@@ -1,10 +1,10 @@
 name: Create Release on Tag
+
 # on: [workflow_dispatch]
 on:
   push:
     tags:
       - "v*.*.*"
-
 jobs:
   build:
     name: "v${{ matrix.build_env.tag }} - ${{ matrix.build_env.pkgarch}} :: ${{ matrix.build_env.target}}/${{ matrix.build_env.subtarget}} build"
@@ -16,7 +16,7 @@ jobs:
             pkgarch: x86_64
             target: x86
             subtarget: 64
-            vermagic: "generic"
+            vermagic: "6.6.73~a21259e4f338051d27a6443a3a7f7f1f-r1"
 
     steps:
       - uses: actions/checkout@v4
